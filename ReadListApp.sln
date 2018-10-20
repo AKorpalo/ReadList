@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadListApp", "ReadListApp\ReadListApp.csproj", "{90CDC314-0244-4BCE-BA25-2D39B8478F43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90CDC314-0244-4BCE-BA25-2D39B8478F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90CDC314-0244-4BCE-BA25-2D39B8478F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90CDC314-0244-4BCE-BA25-2D39B8478F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90CDC314-0244-4BCE-BA25-2D39B8478F43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3B69B13-FF4F-4C2B-977C-14A01A55B565}
+	EndGlobalSection
+EndGlobal
