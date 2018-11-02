@@ -21,7 +21,7 @@ namespace ReadListApp
                     db.Entry(readList).State = EntityState.Deleted;
                     db.SaveChanges();
                     return "Delete successful!";
-                }else return "Row with this id does not exist.";
+                }else return "Delete failed, Row with this id does not exist.";
             }
         }
 
