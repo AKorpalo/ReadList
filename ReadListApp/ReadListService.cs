@@ -92,7 +92,12 @@ namespace ReadListApp
                     return "Update failed, because book must have more pages than zero or less.";
                 if (newReadList.Rating <= 0 || newReadList.Rating > 5)
                     return "Update failed, because rating must be more than one and less than five.";
-                db.Entry(newReadList).State = EntityState.Modified;
+                temp.AuthorName = newReadList.AuthorName;
+                temp.BookTitle = newReadList.BookTitle;
+                temp.Page = newReadList.Page;
+                temp.Rating = newReadList.Rating;
+                temp.ReadingDate = newReadList.ReadingDate;
+                db.Entry(temp).State = EntityState.Modified;
                 db.SaveChanges();
                 return "Update successful!";
             }
