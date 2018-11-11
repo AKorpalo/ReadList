@@ -1,0 +1,36 @@
+﻿@model ASPNetMVC_Client.ReadListNS.ReadList
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h3>Ви впевнені, що хочете видалити цей запис?</h3>
+<div>
+    <hr />
+    <table border="1">
+        <tr>
+            <th style="padding:5px">Автор</th>
+            <th style="padding:5px">Назва Книги</th>
+            <th style="padding:5px">Дата прочитання</th>
+            <th style="padding:5px">К-сть. сторінок</th>
+            <th style="padding:5px">Оцінка</th> 
+        </tr>
+            <tr>
+                <td style="padding:5px">@Model.AuthorName</td>
+                <td style="padding:5px">@Model.BookTitle</td>
+                <td style="padding:5px">@Model.ReadingDate.ToShortDateString()</td>
+                <td style="padding:5px">@Model.Page</td>
+                <td style="padding:5px">@Model.Rating</td>
+            </tr>
+    </table>
+
+    @using (Html.BeginForm("Delete","Home",FormMethod.Post)) {
+        @Html.AntiForgeryToken()
+
+        <div>
+            <br/>
+            <input type="submit" value="Видалити" class="btn btn-default"/> |
+            @Html.ActionLink("Назад", "Index")
+        </div>
+    }
+</div>

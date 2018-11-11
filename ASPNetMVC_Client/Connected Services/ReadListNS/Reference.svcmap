@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="51fa152f-5d7a-41d0-89c0-465225093d83" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/ReadListService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ReadListService.disco" MetadataType="Disco" ID="9b506306-038e-447e-a6c2-3c7e5215c1be" SourceId="1" SourceUrl="http://localhost:8733/ReadListService?disco" />
+    <MetadataFile FileName="ReadListService.xsd" MetadataType="Schema" ID="6d203b91-ff69-4d98-b81f-a1526bc9e351" SourceId="1" SourceUrl="http://localhost:8733/ReadListService?xsd=xsd1" />
+    <MetadataFile FileName="ReadListService.wsdl" MetadataType="Wsdl" ID="0193ca00-db94-4ce0-bdec-1a77dfb4bcaf" SourceId="1" SourceUrl="http://localhost:8733/ReadListService?wsdl=wsdl0" />
+    <MetadataFile FileName="ReadListService1.xsd" MetadataType="Schema" ID="a46de3b4-c68b-4717-a914-cc762e24c057" SourceId="1" SourceUrl="http://localhost:8733/ReadListService?xsd=xsd0" />
+    <MetadataFile FileName="ReadListService1.wsdl" MetadataType="Wsdl" ID="ff4ace2c-2cb6-4a77-872a-10ff3a4d0922" SourceId="1" SourceUrl="http://localhost:8733/ReadListService?wsdl" />
+    <MetadataFile FileName="ReadListService2.xsd" MetadataType="Schema" ID="6ec65460-5ef7-4c64-bb82-44f1fff49327" SourceId="1" SourceUrl="http://localhost:8733/ReadListService?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

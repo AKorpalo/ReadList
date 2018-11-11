@@ -309,13 +309,6 @@ namespace WPF_Client.ViewModel
 
         public bool CanExecuteSearchCommand(object parameter)
         {
-            //string str = parameter as String;
-            //if (str != null)
-            //{
-            //    if (!string.IsNullOrWhiteSpace(str))
-            //        return true;
-            //}
-            //return false;
             return true;
         }
 
@@ -323,7 +316,6 @@ namespace WPF_Client.ViewModel
         #endregion
         public MainWindowViewModel()
         {
-            //_client.InsertReadList("Стівен Кінг", "Сяйво", DateTime.Parse("10.09.2018"), 200, 4);
         }
     }
 }

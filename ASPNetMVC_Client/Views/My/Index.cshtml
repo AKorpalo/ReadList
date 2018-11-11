@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ASPNetMVC_Client.ReadListNS.ReadList>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <table border="1">
+        <tr>
+            <th style="padding:5px">Автор</th>
+            <th style="padding:5px">Назва Книги</th>
+            <th style="padding:5px">Дата прочитання</th>
+            <th style="padding:5px">К-сть. сторінок</th>
+            <th style="padding:5px">Оцінка</th>
+        </tr>
+        @if (Model != null)
+        {
+            foreach (var rl in Model)
+             {
+                 <tr>
+                     <td style="padding: 5px">@rl.AuthorName</td>
+                     <td style="padding: 5px">@rl.BookTitle</td>
+                     <td style="padding: 5px">@rl.ReadingDate.ToShortDateString()</td>
+                     <td style="padding: 5px">@rl.Page</td>
+                     <td style="padding: 5px">@rl.Rating</td>
+                     <td style="padding: 5px"><p><a href="/Home/Edit/@rl.Id">Редагувати</a></p></td>
+                     <td style="padding: 5px"><p><a href="/Home/Delete/@rl.Id">Видалити</a></p></td>
+</tr>
+             }
+        }
+    </table>
+</div>

@@ -1,0 +1,58 @@
+﻿@model ASPNetMVC_Client.ReadListNS.ReadList
+
+@{
+    ViewBag.Title = "Insert";
+}
+
+@using (Html.BeginForm("Insert", "Home", FormMethod.Post)) 
+{
+    @Html.AntiForgeryToken()
+  
+    <br/>
+        <table>
+            <tr>
+                <th style="padding:5px">Автор</th>
+                <td>
+                    @Html.EditorFor(model => model.AuthorName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.AuthorName, "", new { @class = "text-danger" })
+                            </td>
+            </tr>
+            <tr>
+                <th style="padding:5px">Назва Книги</th>
+                <td>
+                    @Html.EditorFor(model => model.BookTitle, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.BookTitle, "", new { @class = "text-danger" })
+                            </td>
+            </tr>
+            <tr>
+                <th style="padding:5px">Дата прочитання</th>
+                <td>@Html.EditorFor(model => model.ReadingDate, new { htmlAttributes = new { @Value = @Model.ReadingDate.ToString("yyyy-MM-dd"), @class = "customclass" } })
+                    @Html.ValidationMessageFor(model => model.ReadingDate, "", new {@class = "text-danger"})</td>
+            </tr>
+            <tr>
+                <th style="padding:5px">К-сть. сторінок</th>
+                <td>@Html.EditorFor(model => model.Page, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Page, "", new { @class = "text-danger" })</td>
+            </tr>
+            <tr>
+                <th style="padding:5px">Оцінка</th>
+                <td>@Html.EditorFor(model => model.Rating, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Rating, "", new { @class = "text-danger" })</td>
+            </tr>
+        </table>
+        
+        
+        <br/>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Додати" class="btn btn-default" />
+            @Html.ActionLink("Назад", "Index")
+        </div>
+    </div>
+
+
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
