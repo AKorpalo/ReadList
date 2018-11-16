@@ -16,14 +16,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Список прочитаного", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Список прочитаного", "Index", "My", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Головна", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Додати", "Insert", "Home")</li>
+                    <li>@Html.ActionLink("Головна", "Index", "My")</li>
+                    <li>@Html.ActionLink("Додати", "Insert", "My")</li>
                     <li>
-                        @using (Html.BeginForm("Search","Home",FormMethod.Post))
+                        @using (Html.BeginForm("Search","My",FormMethod.Post))
                         {
                             <div>
                             @Html.TextBox("searchString");

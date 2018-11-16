@@ -116,7 +116,7 @@ namespace ASPNetMVC_Client.Controllers
         {
             if (string.IsNullOrWhiteSpace(searchString))
             {
-                return Redirect("/Home/Index");
+                return Redirect("/My/Index");
             }
             var list = Client.FindByAuthorOrTitle(searchString);
             return View("Index", list);
